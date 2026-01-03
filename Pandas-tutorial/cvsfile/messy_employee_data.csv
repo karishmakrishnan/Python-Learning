@@ -1,0 +1,8 @@
+id,name,age,salary,join_date,department,email,city
+1.0, Alice ,25,50000,2021-01-05,Sales,alice@example.com,Mumbai
+2.0,bob, thirty ,60000 ,05-02-2020, sales ,bob@example,mumbai 
+3.0,CHARLIE,40,,2020/03/10,HR,charlie@EXAMPLE.com,Delhi
+3.0,CHARLIE,40,60000,,HR,charlie@EXAMPLE.com,Delhi
+4.0,,29, 45000,2021-13-01,Tech,wrong_email, Bangalore
+5.0,david,,70000,2020-07-15,,,Bangalore
+,Eve ,22,N/A,15/08/2019,TECH,eve@example.com,

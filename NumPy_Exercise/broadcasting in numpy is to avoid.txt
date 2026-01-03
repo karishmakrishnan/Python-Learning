@@ -1,0 +1,6 @@
+broadcasting in numpy is to avoid the use of loop in array
+numpy consider array as a batch of chunk and do the operation elements wise at a time.
+like if a=[1,2,3]
+a*2 ==>[2,4,6]
+but broadcasting between array fails if mismatch in dimension or elements
+like a=[[1,2],[2,3]] b=[1,2,3] and a+b fails because column of a is not matching with b

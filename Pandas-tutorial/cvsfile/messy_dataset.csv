@@ -1,0 +1,11 @@
+name,age,city,salary,join_date
+Alice2,25,New York,50000,1/15/2020
+Bob,,Los Angeles,60000,2/20/2019
+,30,New York,,
+David,40,,70000,15-03-2018
+Eva,?,Chicago,80000,7/10/2017
+Frank,35,Chicago,90000,12/1/2018
+Grace3,,New York,,5/30/2020
+,28,Mumbai,45000,2021/13/01
+Ivy,22,,?,11/5/2019
+Jack6,thirty,London,55000,

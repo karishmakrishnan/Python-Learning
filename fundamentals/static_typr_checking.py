@@ -17,3 +17,17 @@ def find_person(name: str) -> Optional[Dict[str, str]]:
 print(process_numbers(num))
 print(find_person("Viju"))
 print(find_person("Alice"))
+
+# zip is used to combine iterables and return a tuple, the values from the same index position will be the one tiple values
+
+list1 = [11,23,4,5]
+lisst2 = [56,77,8,0]
+
+zipped = list(zip(list1, lisst2))
+print(zipped)
+
+list3 = [1,3,5]
+list4 = [5,2,5,8,9]
+
+zipped = list(zip(list3, list4))
+print(zipped)

@@ -31,3 +31,9 @@ list4 = [5,2,5,8,9]
 
 zipped = list(zip(list3, list4))
 print(zipped)
+
+# unzipping
+
+list1, list2 = zip(*zipped)
+print(list1)
+print(list2)

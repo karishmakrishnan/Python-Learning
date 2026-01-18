@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import sys
 data = [1, None, 2, None, 3, 4, None]
 
 cleaned_data = [x for x in data if x is not None]
@@ -44,3 +45,27 @@ bfill_replace = df.bfill()
 print(bfill_replace)
 interpolated_df = df.interpolate()
 print(interpolated_df)
+print(sys.getrefcount(df))
+
+def print_args(*args):
+    for arg in args:
+        print(arg)
+print_args(1,2,3)
+
+def print_kwargs(**kwargs):
+    for key,value in kwargs.items():
+        print(f"{key}:{value}")
+print_kwargs(name="Alice",age=30,city="NewYork")
+
+def print_args_kwargs(*args, **kwargs):
+    print("Positional arguments:", args)
+    print("Keyword arguments:", kwargs)
+print_args_kwargs(1, 2, 3, name="Alice", age=30)
+
+def wrapper_function(func, *args, **kwargs):
+    print("Wrapper function called")
+    return func(*args, **kwargs)
+def greet(name, greeting="Hello"):
+    return f"{greeting}, {name}!"
+result = wrapper_function(greet, "Alice", greeting="Hi")
+print(result) 

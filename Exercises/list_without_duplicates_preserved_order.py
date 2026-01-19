@@ -7,6 +7,7 @@ for i in L1:
         new_list.append(i)
 print("List without duplicates and preserved order:", new_list)
 
+# Array contains numbers from 1 to n, one missing.
 L2 = [1, 2, 4, 5, 6]
 min_val = min(L2)
 max_val = max(L2)

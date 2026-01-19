@@ -3,7 +3,7 @@
 numbers = [10,20,4,45,99,99,45,100,67,34,23,89,100]
 
 def unique(numbers):
-    unique = list
+    unique = []
     for num in numbers:
         if num not in unique:
             unique.append(num)

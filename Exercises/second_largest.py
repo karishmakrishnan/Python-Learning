@@ -21,3 +21,8 @@ def second_largest(numbers):
     return second
 
 print("The second largest number is :", second_largest(unique_numbers))
+
+# Flatten a nested list
+nested_list = [[1,2,3],[4,5],[6,7,8,9],[10]]
+flat_list = [num for sublist in nested_list for num in sublist]
+print("Flattened list is:", flat_list)

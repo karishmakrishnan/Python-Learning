@@ -1,6 +1,6 @@
 # Second largest number from the list wintout using sort
 
-numbers = [10,20,4,45,99,99,45,100,67,34,23,89,100]
+numbers = [10,20,4,45,99,99,45,100,67,34,23,89,100, 98]
 
 def unique(numbers):
     unique = []
@@ -16,7 +16,7 @@ def second_largest(numbers):
         if n > first:
             second = first
             first = n
-        elif n >second and n != first:
+        elif n >second and n < first:
             second = n
     return second
 

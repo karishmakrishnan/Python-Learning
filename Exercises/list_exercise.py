@@ -91,3 +91,14 @@ if is_sorted(l2):
 
 # if l1 == l1_sorted:
 #     print("L1 is sorted list")
+
+sum_list = []
+
+for i in range(len(l1)):
+    sum_list.append(l1[i] + l2[i])
+print("Sum of two lists element-wise:", sum_list)
+
+lst = [10, 5, 20, 8]
+threshold = 10
+filter_list = [num for num in lst if num < threshold]
+print(f"Elements in the list less than {threshold}:", filter_list)

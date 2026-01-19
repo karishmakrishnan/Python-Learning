@@ -13,7 +13,7 @@ print(char_count)
 # Print non-repeating characters
 for key,value in char_count.items():
     if value == 1:
-        print(f"The character {key} non-repeating")
+        print(f"The character {key} is non-repeating")
 
 # Count charector frequency in a string using collections module
 from collections import Counter

@@ -1,3 +1,4 @@
+# check 2 strings are anagrams
 str1 = "karishma"
 str2 = "makarish"
 

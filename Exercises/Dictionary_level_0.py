@@ -103,3 +103,16 @@ dict_1 = {'a': 1, 'b': 2, 'c': 3}
 for key in dict_1:
     key = None
 print(dict_1)
+
+lst1 = [1, 2, 3, 4, 5]
+lst2 = ["a", "b", "c", "d", "e"]
+zipped_dict = dict(zip(lst2, lst1))
+print(zipped_dict)
+dic_list = {}
+
+for x in range(len(lst2)):
+    dic_list[lst2[x]] = lst1[x]
+print(dic_list)
+
+common_keys = [key for key in zipped_dict if key in dic_list]
+print("Common keys:", common_keys)

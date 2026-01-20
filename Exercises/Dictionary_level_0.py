@@ -90,3 +90,8 @@ for key, value in fruit_count.items():
         min_key = key
 print(f"The most frequent/max fruit is {max_key} with a count of {max_val}")
 print(f"The least frequent/min fruit is {min_key} with a count of {min_val}")
+
+reverse_dict = {}
+for key, val in char_count.items():
+    reverse_dict[val] = key
+print(reverse_dict) 

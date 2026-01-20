@@ -63,7 +63,7 @@ print(merged_dict)
 # merge 
 lst = ["banana", "apple", "orange","banana","kiwi","apple"]
 fruit_count = {}
-for fruit in list:
+for fruit in lst:
     if fruit in fruit_count:
         fruit_count[fruit] += 1
     else:
@@ -78,3 +78,15 @@ for char in str1:
     else:
         char_count[char] = 1
 print(char_count)
+
+max_val  = 0
+min_val = float('inf')
+for key, value in fruit_count.items():
+    if value > max_val:
+        max_val = value
+        max_key = key
+    if value < min_val:
+        min_val = value
+        min_key = key
+print(f"The most frequent/max fruit is {max_key} with a count of {max_val}")
+print(f"The least frequent/min fruit is {min_key} with a count of {min_val}")

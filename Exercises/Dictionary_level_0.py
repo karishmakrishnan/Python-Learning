@@ -25,6 +25,7 @@ person["weight"] = 40
 person["age"] = 26
 print(person)
 
+# Level 2 – Dictionary Methods
 # the keys() in dictionary returns a view object that displays a list of all the keys in the dictionary.
 print(person.keys())
 # the values() in dictionary returns a view object that displays a list of all the values in the dictionary.
@@ -59,4 +60,12 @@ print(car)
 # merge 2 dict using | operator
 merged_dict = {**car, **vehicle}
 print(merged_dict)
-# mer
+# merge 
+lst = ["banana", "apple", "orange","banana","kiwi","apple"]
+fruit_count = {}
+for fruit in list:
+    if fruit in fruit_count:
+        fruit_count[fruit] += 1
+    else:
+        fruit_count[fruit] = 1
+print(fruit_count)

@@ -61,6 +61,7 @@ print(car)
 merged_dict = {**car, **vehicle}
 print(merged_dict)
 # merge 
+# Level 3 – Practical Coding Questions
 lst = ["banana", "apple", "orange","banana","kiwi","apple"]
 fruit_count = {}
 for fruit in lst:
@@ -122,5 +123,26 @@ sum_val = 0;
 for val in dic_list.values():
     sum_val += val
 print("Sum of values in dic_list:", sum_val)
+# Level 5 – Dictionary Comprehension
+# What is dictionary comprehension?
+# Dictionary comprehension is a concise way to create dictionaries using a single line of code.
+# It consists of an expression pair (key: value) followed by a for statement inside curly braces {}.
+# Example: Create a dictionary that maps numbers to their squares for numbers from 1 to 5.
+squares = {x: x**2 for x in range(1, 6)}
+print(squares)
+# it is equivalent to the ternary operator in list comprehension.
+# Example: Create a dictionary that maps numbers to their squares for even numbers from 1 to 10.
+even_squares = {x: x**2 for x in range(1, 11) if x % 2 == 0}
+print(even_squares) 
+# Create a dictionary that maps characters to their ASCII values for characters in the string "hello".
+ascii_values = {char: ord(char) for char in "hello"}
+lst = ["apple", "banana", "cherry"]
+lst_dict = {fruit: fruit for fruit in lst}
+print(lst_dict)
 
+multiple_squares = {x: x**2 for x in range(1, 25) if x%5 == 0}
+print(multiple_squares)
+
+swap_dict = {value: key for key, value in multiple_squares.items()}
+print(swap_dict)
 

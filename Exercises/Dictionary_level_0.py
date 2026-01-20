@@ -95,3 +95,11 @@ reverse_dict = {}
 for key, val in char_count.items():
     reverse_dict[val] = key
 print(reverse_dict) 
+
+sorted_char_count = dict(sorted(char_count.items()))
+print(sorted_char_count)
+
+dict_1 = {'a': 1, 'b': 2, 'c': 3}
+for key in dict_1:
+    key = None
+print(dict_1)

@@ -69,3 +69,12 @@ for fruit in list:
     else:
         fruit_count[fruit] = 1
 print(fruit_count)
+
+str1 = "hello world"
+char_count = {}
+for char in str1:
+    if char in char_count:
+        char_count[char] += 1
+    else:
+        char_count[char] = 1
+print(char_count)

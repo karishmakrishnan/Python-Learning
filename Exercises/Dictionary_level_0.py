@@ -116,3 +116,11 @@ print(dic_list)
 
 common_keys = [key for key in zipped_dict if key in dic_list]
 print("Common keys:", common_keys)
+
+sum_val = 0;
+
+for val in dic_list.values():
+    sum_val += val
+print("Sum of values in dic_list:", sum_val)
+
+

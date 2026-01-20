@@ -146,3 +146,31 @@ print(multiple_squares)
 swap_dict = {value: key for key, value in multiple_squares.items()}
 print(swap_dict)
 
+nested_dict = {x: {y: y**2 for y in range(1, 4)} for x in range(1, 4)}
+print(nested_dict)
+# Are dictionaries mutable?
+# Yes, dictionaries are mutable, meaning you can change their content without changing their identity.
+# Why must dictionary keys be immutable?
+# Dictionary keys must be immutable because they need to have a fixed hash value that does not change during their lifetime.
+# This allows for efficient lookups and ensures the integrity of the dictionary structure.
+# How hashing works in dictionaries?
+# Hashing is a process that converts an object (like a key) into a fixed-size integer (hash value) using a hash function.
+# This hash value is used to determine the index where the key-value pair will be stored in the dictionary.
+# When you look up a key, the hash value is computed again to find the correct index quickly.   
+# This allows for fast access to values based on their keys.
+# What is a hash collision?
+# A hash collision occurs when two different keys produce the same hash value.
+# In such cases, the dictionary must handle the collision to ensure that both key-value pairs can be stored and retrieved correctly.
+# Python dictionaries handle collisions using a technique called "open addressing" or "chaining," depending on the implementation.
+# What happens internally when a dictionary grows?
+# When a dictionary grows (i.e., when more key-value pairs are added), 
+# Python may need to resize the underlying data structure to maintain efficient access times.
+# This involves creating a new, larger array and rehashing all existing key-value pairs to their new positions in the array.
+# This process is known as "rehashing" and helps to keep the average time complexity for lookups, insertions, and deletions close to O(1).
+# Can you use a tuple as a dictionary key? Why?
+# Yes, you can use a tuple as a dictionary key because tuples are immutable.
+# Since dictionary keys must be immutable and hashable, tuples meet these criteria, allowing them to be used as keys in dictionaries.
+# However, the elements within the tuple must also be immutable for the tuple to be hashable.
+# For example, a tuple containing only strings and numbers can be used as a dictionary key, but a tuple containing a list cannot.
+tuple_key_dict = {(1, 2): "point A", (3, 4): "point B"}
+print(tuple_key_dict)

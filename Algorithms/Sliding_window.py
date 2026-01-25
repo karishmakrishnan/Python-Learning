@@ -27,3 +27,24 @@ for i in range(k, len(arr)):
     if window_sum > max_sum:
         max_sum = window_sum
 print(max_sum)
+
+# variable size sliding window
+# unlike fixed size in variable size sliding window the subarray size is not constant.
+# wxpand the array, once the condition is satisfied shrink it 
+# start → expand → condition satisfied → shrink → record answer
+# right → expands window
+# left → shrinks window
+# Condition controls movement
+
+# #### pattern
+left = 0
+
+for right in range(len(arr)):
+    # 1. Expand window (include arr[right])
+    condition_is_true = True
+    while condition_is_true:
+        # 2. Update answer
+        # 3. Shrink window (exclude arr[left])
+        left += 1
+        pass
+

@@ -37,14 +37,46 @@ print(max_sum)
 # Condition controls movement
 
 # #### pattern
+# left = 0
+
+# for right in range(len(arr)):
+#     # 1. Expand window (include arr[right])
+#     condition_is_true = True
+#     while condition_is_true:
+#         # 2. Update answer
+#         # 3. Shrink window (exclude arr[left])
+#         left += 1
+#         pass
+
+# Smallest subarray with sum ≥ target
+arr = [2, 3, 1, 2, 4, 3]
+target = 45
+
 left = 0
+window_sum = 0
+min_val = float('inf')
 
 for right in range(len(arr)):
-    # 1. Expand window (include arr[right])
-    condition_is_true = True
-    while condition_is_true:
-        # 2. Update answer
-        # 3. Shrink window (exclude arr[left])
+    window_sum += arr[right]
+    while window_sum >= target:
+        min_val = min(min_val, (right-left) + 1)
+        window_sum -= arr[left]
         left += 1
-        pass
+print(min_val)
 
+# Longest substring without repeating characters
+s = "abcabcbb"
+
+left = 0
+char_set = set()
+max_len = 0
+
+for right in range(len(s)):
+    while s[right] in char_set:
+        char_set.remove(s[left])
+        left += 1
+    char_set.add(s[right])
+    max_len = max(max_len, (right-left) + 1)
+
+print(char_set)
+print(max_len)

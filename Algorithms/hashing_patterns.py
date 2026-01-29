@@ -36,3 +36,15 @@ if frequency == frequency2:
     print("The strings are anagrams")
 else:
     print("The strings are not anagrams")
+
+# set based hashing problems
+arr = [1, 2, 3, 4, 2]
+seen = set()
+duplicate = False
+
+for x in arr:
+    if x in seen:
+        duplicate = True
+        break
+    seen.add(x)
+print(duplicate)

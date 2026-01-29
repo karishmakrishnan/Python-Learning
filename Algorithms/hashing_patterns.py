@@ -71,7 +71,7 @@ seen = set()
 found = False
 
 for num in arr:
-    if target - num in seen:
+    if target - num not in seen:
         found = True
         break
     seen.add(num)

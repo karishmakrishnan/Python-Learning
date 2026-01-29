@@ -14,4 +14,9 @@ for char in s:
 
 print("The CHAR with frequency:", frequency)
 
+# find duplicate
+
+for char,counter in frequency.items():
+    if counter > 1:
+        print(f"The charector has duplicate {char}: {counter}")
 

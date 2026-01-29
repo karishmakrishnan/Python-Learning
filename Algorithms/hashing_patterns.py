@@ -62,3 +62,20 @@ for x in arr:
         break
 print("The array has only unique elements: ", is_unique)
 print(unique)
+
+# Find two number sum to target
+arr = [2, 7, 11, 15]
+target = 9
+
+seen = set()
+found = False
+
+for num in arr:
+    if target - num in seen:
+        found = True
+        break
+    seen.add(num)
+if(found):
+    print(f"The target {target} is sum of {seen}")
+else:
+    print("Cound not find the values in array gives target: ", target)

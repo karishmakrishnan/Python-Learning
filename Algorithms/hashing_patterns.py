@@ -48,3 +48,17 @@ for x in arr:
         break
     seen.add(x)
 print(duplicate)
+
+# check uniqueness in an array
+arr = [1,2,3,4,2]
+unique = set()
+is_unique = True
+
+for x in arr:
+    if x not in unique:
+        unique.add(x)
+    else:
+        is_unique = False
+        break
+print("The array has only unique elements: ", is_unique)
+print(unique)

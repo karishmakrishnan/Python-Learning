@@ -22,3 +22,17 @@ for char,counter in frequency.items():
     else:
         print(f"The non-repeating elements are: {char}")
 
+# anagram using python
+
+frequency2 = {}
+s2 = "aaddbbbc"
+for char in s:
+    if char not in frequency2:
+        frequency2[char] = 1
+    else:
+        frequency2[char] += 1
+
+if frequency == frequency2:
+    print("The strings are anagrams")
+else:
+    print("The strings are not anagrams")

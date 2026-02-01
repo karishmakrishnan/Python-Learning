@@ -49,9 +49,27 @@ root.right = Node(3)
 root.left.left = Node(4)
 root.left.right = Node(5)
 
+from collections import deque
 
+def level_order(root):
+    if not root:
+        return
+
+    queue = deque()
+    queue.append(root)
+    # print("Queue: ", queue)
+    while queue:
+        node = queue.popleft()
+        print(node.val, end=" ")
+
+        if node.left:
+            queue.append(node.left)
+        if node.right:
+            queue.append(node.right)
 inorder(root)
 print("\n")
 preorder(root)
 print("\n")
 postorder(root)
+print("\n")
+level_order(root)

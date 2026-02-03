@@ -13,3 +13,8 @@ for char in s:
 for char, count in frequency.items():
     if count == 1:
         print("The non repeating char:", char)
+# first non-repeating
+for char in s:
+    if frequency[char] == 1:
+        print("First non-repeating character:", char)
+        break

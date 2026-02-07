@@ -65,7 +65,7 @@ for right in range(len(arr)):
 print(min_val)
 
 # Longest substring without repeating characters
-s = "abcabcbb"
+s = "bacabcbb"
 
 left = 0
 char_set = set()

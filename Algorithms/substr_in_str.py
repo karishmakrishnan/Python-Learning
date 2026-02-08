@@ -1,7 +1,7 @@
 # find the substring in given string 
 
-str1 = "dogcar"
-target = "car"
+str1 = "flight"
+target = "flow"
 
 stack = []
 rev_target = list(reversed(target))

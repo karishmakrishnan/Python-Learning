@@ -48,7 +48,7 @@ class Solution(object):
         else:
             cleaned = self.clean_string(s)
             right = len(cleaned) - 1
-            while(left != right):
+            while(left <= right):
                 if cleaned[left] != cleaned[right]:
                     is_palindrom = False
                     break

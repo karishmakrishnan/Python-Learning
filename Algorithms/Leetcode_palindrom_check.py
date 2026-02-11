@@ -23,15 +23,12 @@
  
 
 
-import string
-import re
-
 import re
 import string
 class Solution(object):
     def clean_string(self, s):
         lower_str = s.lower()
-        chars = r"[a-z]+"
+        chars = r"[a-z0-9]+"
         list_chars = re.findall(chars, lower_str)
         cleaned_str = "".join(list_chars)
         return cleaned_str
@@ -48,12 +45,16 @@ class Solution(object):
         else:
             cleaned = self.clean_string(s)
             right = len(cleaned) - 1
-            while(left <= right):
-                if cleaned[left] != cleaned[right]:
-                    is_palindrom = False
-                    break
-                else:
-                    left += 1
-                    right -= 1
+            if cleaned == "" or cleaned == " ":
+                is_palindrom = True
+            else:
+
+                while(left <= right):
+                    if left < right and cleaned[left] != cleaned[right]:
+                        is_palindrom = False
+                        break
+                    else:
+                        left += 1
+                        right -= 1
           
         return is_palindrom

@@ -12,8 +12,8 @@
 # Since 2 has only one digit, return it.
 # Example 2:
 
-Input: num = 0
-Output: 0
+# Input: num = 0
+# Output: 0
 
 class Solution:
     def addDigits(self, num: int) -> int:

@@ -9,9 +9,6 @@
 # If c > 0, the score = floor(v / c) where floor denotes rounding down to the nearest integer.
 # Otherwise, the score = 0.
 # Return an integer denoting the score of the string.
-
- 
-
 # Example 1:
 
 # Input: s = "cooear"

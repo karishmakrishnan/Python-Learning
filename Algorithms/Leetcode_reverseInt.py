@@ -16,3 +16,14 @@
 
 # Input: x = 120
 # Output: 21
+
+class Solution(object):
+    def reverse(self, x):
+        s = ""
+        while(x != 0):
+            rem = x % 10
+            x = x//10
+            s2 = str(rem)
+            s = s + s2
+        result = int(s)
+        return result

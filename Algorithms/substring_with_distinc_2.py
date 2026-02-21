@@ -1,6 +1,6 @@
 # longest substring with maximum distinct element is 2
 
-s = "abababababababab"
+s = "aaabbcc"
 freq = {}
 char_list = []
 left = 0

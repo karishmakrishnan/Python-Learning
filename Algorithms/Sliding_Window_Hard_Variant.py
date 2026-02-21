@@ -7,7 +7,7 @@
 # t = "ABC"
 # Output = "BANC"
 
-s = "ADOBECODEBANC"
+s = "AAABBC"
 t = "ABC"
 min_len = float('inf')
 left_min = 0

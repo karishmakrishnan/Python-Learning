@@ -13,5 +13,4 @@ for right in range(len(s)):
         left += 1
     char_set.add(s[right])
     max_len = max(max_len, (right - left)+1)
-    # max_len = len(char_set)
 print(max_len)

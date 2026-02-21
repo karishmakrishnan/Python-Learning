@@ -30,7 +30,7 @@ print(max_sum)
 
 # variable size sliding window
 # unlike fixed size in variable size sliding window the subarray size is not constant.
-# wxpand the array, once the condition is satisfied shrink it 
+# expand the array, once the condition is satisfied shrink it 
 # start → expand → condition satisfied → shrink → record answer
 # right → expands window
 # left → shrinks window

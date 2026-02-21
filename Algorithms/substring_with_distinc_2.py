@@ -23,7 +23,7 @@ for right in range(len(s)):
             left_max = left
             right_max = right
     else:
-        while distinct != 2 and left < len(s):
+        while len(freq) > 2:
             popitem = char_list.pop(0)
             if popitem not in char_list:
                 freq.pop(popitem)

@@ -1,5 +1,6 @@
-nums = [2, 7, 11, 15]
-target = 18
+# using 2 pointer for sorted array
+nums = [3, 2, 4]
+target = 6
 
 result = []
 
@@ -15,3 +16,16 @@ while(right != len(nums) - 1):
         left += 1
         right += 1
 print(result)
+
+# using dict for unsorted array
+def two_sum(nums, target):
+    lookup = {}
+
+    for i, num in enumerate(nums):
+        complement = target - num
+
+        if complement in lookup:
+            return [lookup[complement], i]
+
+        lookup[num] = i
+print(two_sum(nums, target))

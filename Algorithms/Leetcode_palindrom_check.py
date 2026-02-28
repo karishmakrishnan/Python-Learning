@@ -25,6 +25,9 @@
 
 import re
 import string
+s= "jkj"
+print(s.isalpha())
+print(s.isnumeric())
 class Solution(object):
     def clean_string(self, s):
         lower_str = s.lower()

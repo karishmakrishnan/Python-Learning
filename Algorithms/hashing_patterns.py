@@ -79,3 +79,5 @@ if(found):
     print(f"The target {target} is sum of {seen}")
 else:
     print("Cound not find the values in array gives target: ", target)
+
+print("hello" == "Hello")

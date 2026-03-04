@@ -64,5 +64,6 @@ converted_sum = 0
 for i in range(len(s)): # Look ahead: if next numeral is larger, subtract current 
         if i+1 < len(s) and roman_letter[s[i]] < roman_letter[s[i+1]]: 
             converted_sum -= roman_letter[s[i]] 
-        else: converted_sum += roman_letter[s[i]]
+        else: 
+             converted_sum += roman_letter[s[i]]
 print(converted_sum)
